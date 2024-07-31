@@ -89,6 +89,10 @@ h1 {
     left: 40%;
     top: 90%;
 }
+.circle:active{
+        box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+    
+}
 @media (min-width: 375px) {
     .circle {
       top: 87%;
