@@ -38,7 +38,8 @@
     --Dark-Grayish-Blue: hsl(217, 19%, 24%);
     --Dark-Blue: hsl(218, 23%, 16%);
     /* body fontsize */
-    --font-size: 28px;
+    --font-size-small: 12px;
+    --font-size-large: 28px;
     /* font */
     --font-weight: 800;
 }
@@ -46,4 +47,56 @@
 body{
     font-family: Manrope, sans-serif;
     font-weight: var(--font-weight);
+    font-size: var(--font-size-large);
+    background-color: var(--Dark-Blue);
+    color: var(--Light-Cyan);
+    margin: 6rem 0.875rem;
+    text-align: center;
+    position: relative;
+}
+
+.container{
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 2rem .8rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+h1 {
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    font-size: var(--font-size-small);
+    letter-spacing: 0.3rem;
+    margin-bottom: 20px;
+}
+.advice-content{
+    margin-bottom: 20px;
+    
+}
+
+#pattern-divider{
+   margin-bottom: 2rem;
+}
+.circle{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--Neon-Green);
+    position: absolute;
+    left: 40%;
+    top: 90%;
+}
+@media (min-width: 375px) {
+    .circle {
+      top: 87%;
+      left: 50%;
+    }
+  }
+.circle img{
+    position: absolute;
+    top: 34%;
+    left: 30%;
 }
